@@ -2,7 +2,7 @@
 >The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
 
-**<div align="center"><a href="https://fobadara.github.io/leaderboard/dist/" text="bold">Live Demo</a></div>**
+**<div align="center"><a href="https://fobadara.github.io/Leaderboard/dist/" text="bold">Live Demo</a></div>**
 
 ## Description 🏗️
 
@@ -12,7 +12,7 @@ It uses the Laderboard API to query and save data.
 
 The application is fully responsive and accesible.
 
-**Built With 🔨 **
+**Built With 🔨**
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) 
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
@@ -25,7 +25,6 @@ The application is fully responsive and accesible.
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)  
 ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)  
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) 
-
 ![webpack](https://www.vectorlogo.zone/logos/js_webpack/js_webpack-ar21.svg)
 
 ## Getting Started 🏁
