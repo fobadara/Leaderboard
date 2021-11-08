@@ -1,44 +1,44 @@
-# T0-Do List
->This is a to-do list site that makes use of Loalstorage and Drag and Drop API
+# Leaderboard
+>The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
 
-**<div align="center"><a href="https://fobadara.github.io/to-do-list/dist/" text="bold">Live Demo</a></div>**
+**<div align="center"><a href="https://fobadara.github.io/leaderboard/dist/" text="bold">Live Demo</a></div>**
 
-## Description
+## Description 🏗️
 
 This site is brought to life by basic CRUD operation. It adds, edits, deletes and removes tasks from your list. 
 
-It uses the Local Storage API to ensure your data is alwways present whenever you open it up.
+It uses the Laderboard API to query and save data.
 
-It also uses the Drag and Drop API so that you can easily switch the order of tasks.
+The application is fully responsive and accesible.
 
-The application is built using basic principles of Object Oriented Programming and MVC design pattern.
-
-**Built With :hammer:**
+**Built With 🔨 **
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) 
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-**Tools**
+**Tools 🛠️**
 
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)  
+![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)  
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) 
 
-**WEBPACK**
+![webpack](https://www.vectorlogo.zone/logos/js_webpack/js_webpack-ar21.svg)
 
-## Getting Started
+## Getting Started 🏁
 
 To get a local copy up and running follow these simple example steps.
 
-⬜ clone the app by running this command `git clone https://github.com/fobadara/to-do-list/dist/`
+⬜ clone the app by running this command `git clone https://github.com/fobadara/leaderboard`
 
-⬜ Run this command `cd to-do-list`
+⬜ Run this command `cd leaderboard`
 
 ⬜ Open in browser
 
-**Prerequisites**
+**Prerequisites 📜**
 
 You will be needing:
 
@@ -54,15 +54,26 @@ You can run tests by following these steps:
 
 ⬜ navigate to pull request
 
-⬜ I have created a pull request which runs linters or you could simply create a pull rrequest of your own
+⬜ I have created a pull request which runs linters or you could simply create a pull request of your own
 
-**Authors**
+**Authors ✍️**
 
 👤 Abdulfatai Badara
 
-GitHub: [github.com/fobadara](github.com/fobadara)
-
-Twitter: [fob90s@twitter.com](fob90s@twitter.com)
+<a target="_blank" href="https://github.com/fobadara"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="Github profile"></a>
+<a target="_blank"
+href="www.linkedin.com/in/fobadara"><img
+src="https://img.shields.io/badge/-LinkedIn-0077b5?style=for-the-badge&logo=LinkedIn&logoColor=white" alt="Linkedin profile"></a> 
+<a target="_blank"
+href="https://twitter.com/fob90s"><img
+src="https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white" alt="Twitter profile"></a>    
+<a target="_blank"
+href="mailto:fob90s@gmail.com"><img
+src="https://img.shields.io/badge/-Gmail-D14836?style=for-the-badge&logo=Gmail&logoColor=white" alt="Gmail account"></a>
+<a target="_blank"
+href="https://wa.me/+2349066478370">
+<img
+src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Whatsapp account"></a>
 
 **🤝 Contributing**
 
@@ -70,11 +81,11 @@ Contributions, issues, and feature requests are welcome!
 
 Feel free to check the issues page.
 
-**Show your support**
+**Show your support 💪**
 
 Give a ⭐️ if you like this project!
 
-**Acknowledgments**
+**Acknowledgments ![IMG](http://www.sherv.net/cm/emoticons/hello/hat-tip-smiley-emoticon.gif)**
 
 Hat tip to anyone whose code was used
 
