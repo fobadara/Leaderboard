@@ -4,8 +4,8 @@ const memory = [
 ];
 
 const root = document.querySelector('.root');
-const ul = document.createElement('ul');
+const creator = document.createElement.bind(document);
 
 export {
-  memory, root, ul,
+  memory, root, creator,
 };
