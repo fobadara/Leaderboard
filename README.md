@@ -31,29 +31,33 @@ The application is fully responsive and accesible.
 
 To get a local copy up and running follow these simple example steps.
 
-⬜ clone the app by running this command `git clone https://github.com/fobadara/leaderboard`
-
-⬜ Run this command `cd leaderboard`
-
-⬜ Open in browser
+>clone the app by running this command 
+```bash 
+git clone https://github.com/fobadara/leaderboard
+```
+>Run this command 
+```bash 
+cd leaderboard
+````
+>Open in browser
 
 **Prerequisites 📜**
 
 You will be needing:
 
-⬜ A web browser to view output
+• A web browser to view output
 
-⬜ A text editor or terminal
+• A text editor or terminal
 
 **Run tests**
 
 You can run tests by following these steps:
 
-⬜ commit and push your changes
+• commit and push your changes
 
-⬜ navigate to pull request
+• navigate to pull request
 
-⬜ I have created a pull request which runs linters or you could simply create a pull request of your own
+• I have created a pull request which runs linters or you could simply create a pull request of your own
 
 **Authors ✍️**
 
