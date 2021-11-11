@@ -1,20 +1,32 @@
 import './style.css';
 
 import {
-  memory, root, creator,
+  listenToEvent, callApi, displayDownwards, display,
+} from './use.js';
+
+import {
+  ulContainer, url, getInputValues, postScores, getScores,
 } from './storage.js';
 
-class LeaderBoard {
-  display = (memory, root, creator) => {
-    const ul = creator('ul');
-    memory.forEach((currentItem, index) => {
-      ul.innerHTML += `
-      <li id='${index + 1}'>${currentItem.name}: ${currentItem.score}</li>
-      `;
-    });
-    root.append(ul);
-  }
-}
+const root = document.querySelector('.root');
 
-const leaderBoard = new LeaderBoard();
-leaderBoard.display(memory, root, creator);
+// const refresh = () => {
+
+// };
+
+const handleDisplay = async (container, apiScore, display, api, link) => {
+  const scores = await apiScore(api, link);
+  console.log(scores);
+  display(scores, container);
+};
+
+const refreshAll = (container, apiScore, display, api, link) => {
+  listenToEvent('click', (event) => {
+    // console.log(event.target.tagName)
+    if (event.target.tagName === 'BUTTON') {
+      console.log('button')
+      handleDisplay(container, apiScore, display, api, link);
+    }
+  });
+};
+refreshAll(root, getScores, displayDownwards, callApi, url);
