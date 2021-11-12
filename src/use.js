@@ -12,7 +12,6 @@ const callApi = async (method, url, body) => {
     },
   });
   const output = await resolve.json();
-  // console.log(output);
   return output;
 };
 
@@ -24,15 +23,13 @@ const display = (root, arrayIterator) => {
     <li id="${index}">${currentItem.user}: ${currentItem.score}</li>
   `;
   });
-  root.append(ul);
+  return root.append(ul);
 };
 
 const displayDownwards = async (array, root) => {
   const json = await array.result;
-  console.log(json)
   const sorted = json.sort((a, b) => b.score - a.score);
-  console.log(sorted);
-  display(root, sorted);
+  return display(root, sorted);
 };
 
 export {

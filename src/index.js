@@ -1,37 +1,36 @@
 import './style.css';
 
 import {
-  listenToEvent, callApi, displayDownwards, display,
+  listenToEvent, callApi, displayDownwards,
 } from './use.js';
 
 import {
-  ulContainer, url, getInputValues, postScores, getScores,
+  url, getScores,
 } from './storage.js';
 
 const root = document.querySelector('.root');
 
-// const refresh = () => {
-
-// };
-
 const handleDisplay = async (container, apiScore, display, api, link) => {
   const scores = await apiScore(api, link);
-  console.log(scores);
-  display(scores, container);
+  return display(scores, container);
 };
 handleDisplay(root, getScores, displayDownwards, callApi, url);
 
-const refreshAll = (container, apiScore, display, api, link) => {
+const refresh = (container, handleDisplay, apiScore, display, api, link) => {
+  let callHandleDisplay;
+  let emptyValue;
   listenToEvent('click', (event) => {
-    // console.log(event.target.tagName)
-    if (event.target.tagName === 'BUTTON') {
-      console.log('button')
-      handleDisplay(container, apiScore, display, api, link);
+    const { action } = event.target.dataset;
+    if (action === 'refresh') {
+      callHandleDisplay = handleDisplay(container, apiScore, display, api, link);
+    } else if (action === 'submit') {
       const input = document.querySelectorAll('input');
       input.forEach((currentItem) => {
         currentItem.value = '';
+        emptyValue = currentItem.value;
       });
     }
   });
+  return callHandleDisplay || emptyValue;
 };
-refreshAll(root, getScores, displayDownwards, callApi, url);
+refresh(root, handleDisplay, getScores, displayDownwards, callApi, url);
