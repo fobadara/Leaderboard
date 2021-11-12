@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Maiden+Orange&display=swap");
+
+body {
+  font-family: "Maiden Orange", cursive;
+  letter-spacing: 1px;
+}
+
+ul {
+  margin: 0;
+}
+
+ul:nth-child(even) {
+  background-color: gainsboro;
+}
+
+li {
+  list-style-type: none;
+  margin-left: -2em;
+  padding: 0.3em;
+}
+
+main input {
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+  width: 99%;
+  height: 2.2em;
+}
+
+button {
+  margin: 0.5em;
+}
+
+#scores {
+  border: solid;
+}
+
+@media only screen and (min-width: 480px) {
+  .container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .d-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #scores {
+    margin-right: 5em;
+  }
+
+  #inputs button {
+    float: right;
+    clear: both;
+  }
+}
