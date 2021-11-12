@@ -18,9 +18,10 @@ const callApi = async (method, url, body) => {
 const display = (root, arrayIterator) => {
   root.innerHTML = '';
   const ul = document.createElement('ul');
+  ul.tabIndex = 0;
   arrayIterator.forEach((currentItem, index) => {
     ul.innerHTML += `
-    <li id="${index}">${currentItem.user}: ${currentItem.score}</li>
+    <li id="${index}" tabIndex = 0>${currentItem.user}: ${currentItem.score}</li>
   `;
   });
   return root.append(ul);
