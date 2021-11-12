@@ -19,6 +19,7 @@ const handleDisplay = async (container, apiScore, display, api, link) => {
   console.log(scores);
   display(scores, container);
 };
+handleDisplay(root, getScores, displayDownwards, callApi, url);
 
 const refreshAll = (container, apiScore, display, api, link) => {
   listenToEvent('click', (event) => {
@@ -26,6 +27,10 @@ const refreshAll = (container, apiScore, display, api, link) => {
     if (event.target.tagName === 'BUTTON') {
       console.log('button')
       handleDisplay(container, apiScore, display, api, link);
+      const input = document.querySelectorAll('input');
+      input.forEach((currentItem) => {
+        currentItem.value = '';
+      });
     }
   });
 };

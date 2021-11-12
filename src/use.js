@@ -24,6 +24,7 @@ const display = (root, arrayIterator) => {
     <li id="${index}">${currentItem.user}: ${currentItem.score}</li>
   `;
   });
+  root.append(ul);
 };
 
 const displayDownwards = async (array, root) => {

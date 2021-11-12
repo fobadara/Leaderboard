@@ -7,13 +7,10 @@ const ulContainer = document.createElement('ul');
 const getInputValues = () => {
   let user;
   let score;
-  let input = document.querySelectorAll('input');
+  const input = document.querySelectorAll('input');
   input.forEach((currentItem) => {
     if (currentItem.name === 'name') {
       user = currentItem.value;
-    } else {
-      score = currentItem.value;
-      input.value = ''
     }
   });
   return (score) ? JSON.stringify({ user, score }) : '';
