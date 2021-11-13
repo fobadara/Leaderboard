@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard</title>
+</head>
+
+<body>
+  <header>
+    <h1>Leaderboard</h1>
+  </header>
+  <main>
+    <section class="container">
+      <div id="display">
+        <div class="d-flex">
+          <h2>Recent scores</h2>
+          <button type="button" data-action="refresh">Refresh</button>
+        </div>
+        <div id="scores" class="root"></div>
+      </div>
+      <div id="inputs">
+        <div>
+          <h2>Add your score</h2>
+        </div>
+        <form action="./storage.js">
+          <input type="text" class="name" name="name" placeholder="Your name" required><br>
+          <input type="number" name="score" id="score" placeholder="Your score" required><br>
+          <button type="submit" class="submit" data-action="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
